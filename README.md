@@ -1,1 +1,1 @@
-# projektZaliczneniowy
+# projekt zaliczneniowy
