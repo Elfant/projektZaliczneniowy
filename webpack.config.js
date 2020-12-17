@@ -13,6 +13,7 @@ module.exports = {
   output: {
     filename: "[name].[contenthash:5].js",
     path: path.resolve(__dirname, "build"),
+    publicPath: ""
   },
 
   resolve: {
@@ -39,6 +40,19 @@ module.exports = {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
+            },
+          },
+        ],
+      }
     ],
   },
 
