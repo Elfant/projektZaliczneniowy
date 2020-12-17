@@ -1,0 +1,8 @@
+.list {
+  list-style-type: none;
+
+  &__item {
+    display: inline-block;
+    padding-left: 20px;
+  }
+}

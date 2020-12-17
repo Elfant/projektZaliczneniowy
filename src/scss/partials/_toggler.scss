@@ -1,0 +1,15 @@
+.toggler {
+  width: 45px;
+  height: 28px;
+  position: absolute;
+  left: 53px;
+  top: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__bar {
+    background-color: #000;
+    height: 4px;
+  }
+}

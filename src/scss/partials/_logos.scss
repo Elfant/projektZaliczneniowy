@@ -1,0 +1,17 @@
+.logo {
+  display: inline-block;
+  margin: 0;
+
+  &__bolded-word {
+    color: $green;
+  }
+
+  &--small {
+    padding: 10px 0;
+    font-size: 13px;
+  }
+
+  &--big {
+    font-size: 30px;
+  }
+}

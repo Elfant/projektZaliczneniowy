@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+
+  &__toggler-box {
+    width: $toggler-width;
+    height: 65px;
+    background-color: $green;
+    display: flex;
+    position: relative;
+  }
+
+  &__triangle {
+    height: 37px;
+    flex-basis: 100%;
+    align-self: flex-end;
+    border-bottom: 37px solid #fff;
+    border-right: $toggler-width solid $green;
+  }
+}
