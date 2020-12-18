@@ -5,13 +5,15 @@
 @import "./Header";
 @import "./Intro";
 @import "./Footer";
+@import "./SectionHeader";
+@import "./BlogCard";
 
 @import "./partials/toggler";
 @import "./partials/logos.scss";
 @import "./partials/list.scss";
 
 * {
-  font-family: Montserrat;
+  font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
 

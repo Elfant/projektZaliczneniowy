@@ -1,0 +1,17 @@
+.section-header {
+  position: relative;
+  margin: 25px 0 35px 0;
+
+  &__text {
+    background-color: #fff;
+    position: absolute;
+    padding: 0 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  &__line {
+    border-color: #00cc14;
+  }
+}

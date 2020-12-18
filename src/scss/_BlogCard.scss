@@ -1,0 +1,39 @@
+.blog-card {
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px 32px 14px 19px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &__text {
+    flex-grow: 1;
+  }
+
+  &__author {
+    margin: 13px 0 11px 0;
+    font-size: 12px;
+  }
+
+  &__title {
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__img {
+    width: 80px;
+    height: 67px;
+    background: red;
+  }
+
+  &__date {
+    font-weight: 600;
+    color: #0000007a;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  &__img {
+    background: url("../images//gatsby.png") no-repeat center;
+    background-size: contain;
+  }
+}
