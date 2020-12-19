@@ -1,0 +1,39 @@
+.newsletter {
+  padding: 30px 58px 40px 58px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 70px;
+
+  &__header {
+    font-weight: normal;
+    padding-bottom: $spacing-x6;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__bolded-word {
+    color: $green;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 14px;
+    padding: 14px 0 14px 17px;
+    border-color: #00000080;
+  }
+
+  &__button {
+    width: 100%;
+    padding: $spacing-x2 0;
+    margin: $spacing-x2 0;
+    background: $green;
+    color: $white;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__explanation {
+    margin: 0;
+    font-size: 9px;
+  }
+}

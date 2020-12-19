@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
+  padding-top: $spacing-x5;
 
   &__toggler-box {
     width: $toggler-width;
@@ -15,7 +15,7 @@
     height: 37px;
     flex-basis: 100%;
     align-self: flex-end;
-    border-bottom: 37px solid #fff;
+    border-bottom: 37px solid $white;
     border-right: $toggler-width solid $green;
   }
 }

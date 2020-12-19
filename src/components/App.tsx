@@ -5,6 +5,7 @@ import Intro from "./Intro";
 import SectionHeader from "./SectionHeader";
 import Footer from "./Footer";
 import BlogCard from "./BlogCard";
+import Newsletter from "./Newsletter";
 
 const App: React.FC = () => {
   return (
@@ -17,7 +18,9 @@ const App: React.FC = () => {
       </section>
       <section className="container">
         <SectionHeader text="Newsletter" />
+        <Newsletter />
       </section>
+      <Footer />
     </>
   );
 };

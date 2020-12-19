@@ -4,9 +4,10 @@
 
 @import "./Header";
 @import "./Intro";
-@import "./Footer";
 @import "./SectionHeader";
 @import "./BlogCard";
+@import "./Newsletter";
+@import "./Footer";
 
 @import "./partials/toggler";
 @import "./partials/logos.scss";
@@ -15,10 +16,6 @@
 * {
   font-family: Arial, sans-serif;
   box-sizing: border-box;
-}
-
-html {
-  height: 100vh;
 }
 
 body {

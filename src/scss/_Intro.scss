@@ -3,7 +3,7 @@
   text-align: center;
 
   &__header {
-    padding: 35px 0;
+    padding: $spacing-x7 0;
     box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
   }
 
@@ -24,13 +24,11 @@
   }
 
   &__search {
-    margin-top: 5px;
-    padding: 15px 0;
+    margin-top: $spacing-x1;
+    padding: $spacing-x3 0 $spacing-x3 $spacing-x6;
     width: 255px;
     font-size: 15px;
-    padding-left: 10px;
     border-color: #00000040;
-    padding-left: 30px;
 
     &::placeholder {
       color: #0000003b;
@@ -45,7 +43,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    left: 10px;
+    left: $spacing-x2;
     top: 50%;
     transform: translateY(-50%);
     background: url("../images/search_icon.svg") no-repeat;
