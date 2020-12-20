@@ -2,10 +2,10 @@ import * as React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="container header">
-      <nav className="header__navbar navbar">
+    <header className="header">
+      <nav className="header__navbar navbar container">
         <p className="navbar__logo logo logo--big">
-          U<br/><strong className="logo__bolded-word">mnie</strong><br />dziala
+          U<br /><strong className="logo__bolded-word">mnie</strong><br />dziala
         </p>
         <div className="navbar__toggler-box">
           <div className="navbar__triangle"></div>

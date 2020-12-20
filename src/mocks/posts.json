@@ -1,0 +1,23 @@
+ {
+    "posts": [
+      {
+        "id": "1",
+        "author": "Aleksander Tański",
+        "title": "Nowy framework",
+        "date": "10 listopad"
+      },
+      {
+        "id": "2",
+        "author": "Aleksander Tański",
+        "title": "React redux vs context",
+        "date": "3 grudzień"
+      },
+      {
+        "id": "3",
+        "author": "Jan Kowalski",
+        "title": "Czym jest BEM?",
+        "date": "8 grudzień"
+      }
+    ]
+  }
+
