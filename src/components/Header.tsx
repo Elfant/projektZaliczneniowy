@@ -44,9 +44,15 @@ const Header: React.FC = () => {
           </div>
         </div>
         <ul className="header__menu menu">
-          <li className="menu__item">Posty</li>
-          <li className="menu__item">O nas</li>
-          <li className="menu__item">Kursy</li>
+          <li className="menu__item">
+            <a className="menu__link" href="#">Posty</a>
+          </li>
+          <li className="menu__item">
+            <a className="menu__link" href="#">O nas</a>
+          </li>
+          <li className="menu__item">
+            <a className="menu__link" href="#">Kursy</a>
+          </li>
         </ul>
       </nav>
     </header>
