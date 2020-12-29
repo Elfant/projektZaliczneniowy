@@ -1,7 +1,15 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $white;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   padding-top: $spacing-x5;
+  flex-wrap: wrap;
 
   &__toggler-box {
     width: $toggler-width;
@@ -9,6 +17,10 @@
     background-color: $green;
     display: flex;
     position: relative;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
 
   &__triangle {

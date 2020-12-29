@@ -14,8 +14,8 @@ const App: React.FC = () => {
   useEffect(() => {
     fetch("/src/mocks/posts.json")
       .then((resp) => resp.json())
-      .then((data) => setPost(data.posts))
-      // .catch((e) => console.log(e));
+      .then((data) => setPost(data.posts));
+    // .catch((e) => console.log(e));
   }, []);
 
   return (
@@ -24,16 +24,18 @@ const App: React.FC = () => {
       <Intro />
       <section className="container">
         <SectionHeader text="Popularne" />
-        {posts.length
-          ? posts.map((post) => (
-              <BlogCard
-                key={post.id}
-                author={post.author}
-                title={post.title}
-                date={post.date}
-              />
-            ))
-          : null}
+        <div className="posts">
+          {posts.length
+            ? posts.map((post) => (
+                <BlogCard
+                  key={post.id}
+                  author={post.author}
+                  title={post.title}
+                  date={post.date}
+                />
+              ))
+            : null}
+        </div>
       </section>
       <section className="container">
         <SectionHeader text="Newsletter" />

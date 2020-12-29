@@ -1,0 +1,51 @@
+.menu {
+  overflow: hidden;
+  height: 0;
+  width: 100vw;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  background: $white;
+  padding: 0;
+  text-align: center;
+
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+
+  transition: height 0.3s ease-in-out;
+
+  &--open {
+    height: 100vh;
+  }
+
+  &__item {
+    padding: $spacing-x1 $spacing-x1;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 3px;
+      background: $green;
+      transition: width 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    overflow: auto;
+    height: auto;
+    width: auto;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+
+    &__item {
+      padding: $spacing-x1 $spacing-x5;
+    }
+  }
+}

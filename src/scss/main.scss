@@ -10,6 +10,7 @@
 @import "./Footer";
 
 @import "./partials/toggler";
+@import "./partials/menu";
 @import "./partials/logos.scss";
 @import "./partials/list.scss";
 
@@ -21,4 +22,13 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.posts {
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

@@ -11,5 +11,21 @@
   &__bar {
     background-color: #000;
     height: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &--clicked {
+    .toggler__bar:nth-child(1) {
+      transform-origin: left;
+      transform: rotateZ(45deg) translateY(-5px);
+    }
+    .toggler__bar:nth-child(2) {
+      display: none;
+    }
+
+    .toggler__bar:nth-child(3) {
+      transform-origin: left;
+      transform: rotateZ(-45deg) translateY(5px);
+    }
   }
 }

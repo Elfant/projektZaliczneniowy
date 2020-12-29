@@ -16,7 +16,7 @@
 
   &__input {
     width: 100%;
-    font-size: 14px;
+    font-size: 0.8rem;
     padding: 14px 0 14px 17px;
     border-color: #00000080;
   }
@@ -34,6 +34,12 @@
 
   &__explanation {
     margin: 0;
-    font-size: 9px;
+    font-size: 0.7rem;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
