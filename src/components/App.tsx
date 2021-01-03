@@ -22,7 +22,7 @@ const App: React.FC = () => {
   return (
     <>
       <Header />
-      <Intro filterPosts={setFilteredPost} posts={posts} />
+      <Intro setFilteredPosts={setFilteredPost} posts={posts} />
       <section className="container">
         <SectionHeader text="Popularne" />
         <Posts posts={filterdPost.length === 0 ? posts : filterdPost} />

@@ -4,21 +4,21 @@ import Post from "../models/Post";
 
 interface OwnProps {
   posts: Post[];
-  filterPosts: Function;
+  setFilteredPosts: Function;
 }
 
-const Intro: React.FC<OwnProps> = ({ posts, filterPosts }) => {
+const Intro: React.FC<OwnProps> = ({ posts, setFilteredPosts }) => {
   const handleFiltering = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.value.length > 2) {
       const regEx = new RegExp(e.target.value, "i");
 
       const filtredPosts = posts.filter((item) => regEx.test(item.title));
       
-      filterPosts(filtredPosts);
+      setFilteredPosts(filtredPosts);
     };
 
     if(e.target.value.length === 0) {
-      filterPosts([]);
+      setFilteredPosts([]);
     }
   };
 
