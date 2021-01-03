@@ -1,13 +1,8 @@
 import * as React from "react";
 
-interface OwnProps {
-  key: string;
-  author: string;
-  title: string;
-  date: string;
-}
+import Post from "../models/Post";
 
-const BlogCard: React.FC<OwnProps> = ({ author, title, date }) => {
+const BlogCard: React.FC<Post> = ({ author, title, date }) => {
   return (
     <div className="blog-card">
       <div className="blog-card__text">
