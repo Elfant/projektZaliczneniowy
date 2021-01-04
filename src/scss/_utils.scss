@@ -1,0 +1,11 @@
+.link-reset {
+  text-decoration: none;
+
+  &:active {
+    color: unset;
+  }
+
+  &:visited {
+    color: unset;
+  }
+}

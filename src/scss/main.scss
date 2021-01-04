@@ -1,17 +1,19 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 @import "./variables";
+@import "./utils";
 
 @import "./Header";
 @import "./Intro";
 @import "./SectionHeader";
+@import "./Posts";
 @import "./BlogCard";
 @import "./Newsletter";
 @import "./Footer";
 
 @import "./partials/toggler";
 @import "./partials/menu";
-@import "./partials/logos.scss";
+@import "./partials/logo.scss";
 @import "./partials/label";
 @import "./partials/list.scss";
 
@@ -23,13 +25,4 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-.posts {
-
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 }

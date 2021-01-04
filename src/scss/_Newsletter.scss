@@ -38,6 +38,7 @@
 
     &:hover:not([disabled]) {
       background: darken($green, 5);
+      cursor: pointer;
     }
 
     &:disabled {

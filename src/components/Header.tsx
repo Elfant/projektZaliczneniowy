@@ -29,12 +29,14 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <nav className="header__navbar navbar container">
-        <p className="navbar__logo logo logo--big">
-          U<br />
-          <strong className="logo__bolded-word">mnie</strong>
-          <br />
-          dziala
-        </p>
+        <a href="#" className="navbar__link link-reset">
+          <p className="navbar__logo logo logo--big">
+            U<br />
+            <strong className="logo__bolded-word">mnie</strong>
+            <br />
+            dziala
+          </p>
+        </a>
         <div className="navbar__toggler-box ">
           <div className="navbar__triangle"></div>
           <div className="navbar__toggler toggler" onClick={handleMenu}>
