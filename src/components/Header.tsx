@@ -45,13 +45,19 @@ const Header: React.FC = () => {
         </div>
         <ul className="header__menu menu">
           <li className="menu__item">
-            <a className="menu__link" href="#">Posty</a>
+            <a className="menu__link" href="#">
+              Posty
+            </a>
           </li>
           <li className="menu__item">
-            <a className="menu__link" href="#">O nas</a>
+            <a className="menu__link" href="#">
+              O nas
+            </a>
           </li>
           <li className="menu__item">
-            <a className="menu__link" href="#">Kursy</a>
+            <a className="menu__link" href="#">
+              Kursy
+            </a>
           </li>
         </ul>
       </nav>

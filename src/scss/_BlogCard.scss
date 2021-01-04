@@ -3,7 +3,7 @@
   padding: 12px 32px 14px 19px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: $spacing-x4;
   flex-basis: 49%;
 
   &__text {
@@ -28,7 +28,7 @@
   &__date {
     font-weight: 600;
     color: #0000007a;
-    margin-top: 12px;
+    margin-top: $spacing-x2;
     font-size: 12px;
   }
 

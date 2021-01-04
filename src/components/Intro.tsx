@@ -13,11 +13,11 @@ const Intro: React.FC<OwnProps> = ({ posts, setFilteredPosts }) => {
       const regEx = new RegExp(e.target.value, "i");
 
       const filtredPosts = posts.filter((item) => regEx.test(item.title));
-      
+
       setFilteredPosts(filtredPosts);
     };
 
-    if(e.target.value.length === 0) {
+    if (e.target.value.length === 0) {
       setFilteredPosts([]);
     }
   };

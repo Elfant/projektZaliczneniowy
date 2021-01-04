@@ -1,0 +1,8 @@
+.label {
+  margin-left: $spacing-x1;
+
+  &--incorrect {
+    color: #dc0000;
+    font-size: 0.8rem;
+  }
+}
